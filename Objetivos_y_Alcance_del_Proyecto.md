@@ -1,6 +1,6 @@
 # PROYECTO EVALUATIVO DE APRENDIZAJE AUTOMATICO
 
-## Primer Entrega 
+## DESCRIPCION DEL PROYECTO
 
 ## Segmentación mediante detección de patrones en población adulta en el consumo de psicofármacos con fines terapéuticos
 
