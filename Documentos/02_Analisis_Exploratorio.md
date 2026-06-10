@@ -41,14 +41,22 @@ La base final está compuesta por variables provenientes de los tres archivos or
 | total_psicofarmacos | Total de psicofármacos consumidos | Entero | Cuantitativa discreta |
 
 ## Información relevante del dataset
+
 El dataset integra información proveniente de distintas dimensiones relacionadas con la salud y el consumo de medicamentos:
 •	Características demográficas. 
+
 •	Características socioeconómicas. 
+
 •	Estado de salud general. 
+
 •	Estado de salud mental. 
+
 •	Condiciones médicas diagnosticadas. 
+
 •	Medicamentos prescritos. 
+
 •	Consumo específico de psicofármacos. 
+
 La combinación de estas dimensiones permite analizar posibles relaciones entre variables sociales, económicas y sanitarias con los patrones de consumo de medicamentos utilizados para el tratamiento de trastornos de ansiedad, depresión y alteraciones del sueño.
 
 
@@ -65,46 +73,77 @@ Para la construcción del dataset final se utilizaron tres archivos pertenecient
 Este archivo contiene información consolidada de las personas encuestadas durante el período de estudio.
 
 ## Características principales
+
 •	27.805 registros. 
+
 •	1.451 variables. 
+
 ## Información incluida
+
 •	Edad. 
+
 •	Sexo. 
+
 •	Estado civil. 
+
 •	Nivel educativo. 
+
 •	Situación laboral. 
+
 •	Ingresos. 
+
 •	Cobertura médica. 
+
 •	Estado de salud general. 
+
 •	Estado de salud mental. 
+
 •	Características demográficas. 
+
 Este archivo constituye la base principal sobre la cual se realizó la integración de los demás datasets.
 
 ## 2)	Dataset H222 – Medical Conditions File
 Este archivo registra las condiciones médicas reportadas por los individuos encuestados.
 
 ## Características principales
+
 •	80.802 registros. 
+
 •	30 variables. 
+
 Información incluida
+
 •	Diagnósticos médicos. 
+
 •	Códigos de clasificación de enfermedades. 
+
 •	Condiciones de salud reportadas. 
+
 •	Vinculación entre individuos y diagnósticos. 
+
 Este dataset permitió construir variables relacionadas con la cantidad de condiciones médicas asociadas a cada individuo.
 
 ## 3)	Dataset H229A – Prescribed Medicines File
 Este archivo contiene información sobre medicamentos prescritos a los participantes de la encuesta.
 
 ## Características principales
+
 •	303.394 registros. 
+
 •	66 variables. 
+
 Información incluida
+
 •	Nombre comercial del medicamento. 
+
 •	Nombre genérico. 
+
 •	Clasificación terapéutica. 
+
 •	Cantidad de recetas. 
+
 •	Información farmacológica. 
+
 Este dataset permitió identificar y clasificar medicamentos pertenecientes a las categorías de interés para el proyecto.
 
 Proceso de integración y construcción del dataset final. (Este proceso tambien queda registrado en el jupyter notebook y va a estar incluido en los archivos en el Git “unificacion_psicofarmacos_fina.ipynb”).
@@ -124,18 +163,29 @@ Los tres datasets comparten la variable DUPERSID, identificador único asignado 
 
 ## Construcción de variables farmacológicas
 A partir del archivo H229A se identificaron medicamentos pertenecientes a las siguientes categorías:
+
 •	Benzodiacepinas. 
+
 •	Antidepresivos. 
+
 •	Hipnóticos. 
+
 •	Ansiolíticos. 
 
 ## Posteriormente se calcularon indicadores agregados por individuo, tales como:
+
 •	Cantidad total de recetas. 
-•	Cantidad de benzodiacepinas consumidas. 
+
+•	Cantidad de benzodiacepinas consumidas.
+
 •	Cantidad de antidepresivos consumidos. 
+
 •	Cantidad de hipnóticos consumidos. 
+
 •	Cantidad de ansiolíticos consumidos. 
+
 •	Total de psicofármacos consumidos. 
+
 ## Construcción de variables sanitarias
 A partir del archivo H222 se calcularon indicadores relacionados con la cantidad de condiciones médicas registradas para cada individuo.
 Integración de datasets
