@@ -14,8 +14,8 @@ A partir de la integración y procesamiento de diferentes conjuntos de datos, se
 
 Contiene la documentación correspondiente a las distintas etapas del proyecto:
 
-- Primera Entrega
-- Segunda Entrega
+- 01_Objetivos_y_Alcance_del_Proyecto.md
+- 02_Analisis_exploratorio.md
 - Documento de Unificación de Datos
 
 #### ARCHIVOS
