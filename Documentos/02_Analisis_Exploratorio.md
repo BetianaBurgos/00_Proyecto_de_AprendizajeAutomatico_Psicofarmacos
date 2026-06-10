@@ -15,26 +15,30 @@ El dataset final contiene aproximadamente 27.805 instancias, donde cada fila rep
 
 ## Cantidad de variables
 La base final está compuesta por variables provenientes de los tres archivos originales y por variables derivadas construidas durante el proceso de preprocesamiento. Las variables seleccionadas fueron aquellas consideradas relevantes para el análisis del consumo de psicofármacos y la posterior aplicación de algoritmos de clustering.
-Diccionario de variables del dataset final
-Variable	Descripción	Tipo de dato	Clasificación
-DUPERSID	Identificador único de cada individuo	Entero/String	Cualitativa nominal
-AGE20X	Edad del individuo	Entero	Cuantitativa discreta
-SEX	Sexo del individuo	Categórica	Cualitativa nominal
-MARRY20X	Estado civil	Categórica	Cualitativa nominal
-EDUCYR	Años de educación completados	Entero	Cuantitativa discreta
-POVCAT20	Categoría de ingresos según nivel de pobreza	Categórica	Cualitativa ordinal
-EMPST53	Situación laboral	Categórica	Cualitativa nominal
-INSCOV20	Cobertura médica	Categórica	Cualitativa nominal
-MNHLTH53	Estado de salud mental autopercibido	Categórica	Cualitativa ordinal
-RTHLTH53	Estado general de salud autopercibido	Categórica	Cualitativa ordinal
-RACETHX	Grupo racial o étnico	Categórica	Cualitativa nominal
-cantidad_condiciones	Cantidad de condiciones médicas registradas	Entero	Cuantitativa discreta
-recetas_totales	Cantidad total de medicamentos prescritos	Entero	Cuantitativa discreta
-benzodiacepinas	Cantidad de benzodiacepinas consumidas	Entero	Cuantitativa discreta
-antidepresivos	Cantidad de antidepresivos consumidos	Entero	Cuantitativa discreta
-hipnoticos	Cantidad de hipnóticos consumidos	Entero	Cuantitativa discreta
-ansioliticos	Cantidad de ansiolíticos consumidos	Entero	Cuantitativa discreta
-total_psicofarmacos	Total de psicofármacos consumidos	Entero	Cuantitativa discreta
+
+## Diccionario de variables del dataset final
+
+
+| Variable | Descripción | Tipo de dato | Clasificación |
+|----------|-------------|--------------|----------------|
+| DUPERSID | Identificador único de cada individuo | Entero/String | Cualitativa nominal |
+| AGE20X | Edad del individuo | Entero | Cuantitativa discreta |
+| SEX | Sexo del individuo | Categórica | Cualitativa nominal |
+| MARRY20X | Estado civil | Categórica | Cualitativa nominal |
+| EDUCYR | Años de educación completados | Entero | Cuantitativa discreta |
+| POVCAT20 | Categoría de ingresos según nivel de pobreza | Categórica | Cualitativa ordinal |
+| EMPST53 | Situación laboral | Categórica | Cualitativa nominal |
+| INSCOV20 | Cobertura médica | Categórica | Cualitativa nominal |
+| MNHLTH53 | Estado de salud mental autopercibido | Categórica | Cualitativa ordinal |
+| RTHLTH53 | Estado general de salud autopercibido | Categórica | Cualitativa ordinal |
+| RACETHX | Grupo racial o étnico | Categórica | Cualitativa nominal |
+| cantidad_condiciones | Cantidad de condiciones médicas registradas | Entero | Cuantitativa discreta |
+| recetas_totales | Cantidad total de medicamentos prescritos | Entero | Cuantitativa discreta |
+| benzodiacepinas | Cantidad de benzodiacepinas consumidas | Entero | Cuantitativa discreta |
+| antidepresivos | Cantidad de antidepresivos consumidos | Entero | Cuantitativa discreta |
+| hipnoticos | Cantidad de hipnóticos consumidos | Entero | Cuantitativa discreta |
+| ansioliticos | Cantidad de ansiolíticos consumidos | Entero | Cuantitativa discreta |
+| total_psicofarmacos | Total de psicofármacos consumidos | Entero | Cuantitativa discreta |
 
 ## Información relevante del dataset
 El dataset integra información proveniente de distintas dimensiones relacionadas con la salud y el consumo de medicamentos:
