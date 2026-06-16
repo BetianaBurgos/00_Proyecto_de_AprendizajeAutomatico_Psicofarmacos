@@ -1,4 +1,11 @@
-1. Introducción
+# Presentación del Modelo y Análisis de Resultados
+
+## Segmentación mediante detección de patrones en población adulta en el consumo de psicofármacos con fines terapéuticos
+
+## Alumna: Betiana Ruth Burgos
+----------
+
+# 1. Introducción
 
 La salud mental constituye actualmente uno de los principales desafíos para los sistemas sanitarios a nivel mundial. Durante las últimas décadas se ha registrado un incremento sostenido en la prevalencia de trastornos asociados a la ansiedad, la depresión, los trastornos del sueño y otras afecciones psicológicas que afectan significativamente la calidad de vida de las personas. Este fenómeno ha estado acompañado por un aumento en la utilización de medicamentos psicotrópicos destinados al tratamiento de dichas problemáticas, convirtiendo a los psicofármacos en uno de los grupos terapéuticos de mayor relevancia dentro de la práctica clínica contemporánea.
 
@@ -12,7 +19,9 @@ El presente proyecto tiene como objetivo aplicar técnicas de Aprendizaje Autom�
 
 A través de la utilización de técnicas de reducción de dimensionalidad y algoritmos de clustering, se busca detectar perfiles diferenciados de individuos según sus características y patrones de consumo farmacológico. De esta manera, el trabajo pretende demostrar la utilidad del Aprendizaje Automático como herramienta para el análisis de fenómenos vinculados a la salud pública y contribuir a una mejor comprensión de los factores asociados al consumo de psicofármacos.
 
-2. Fundamentación del Problema
+----------
+
+# 2. Fundamentación del Problema
 
 El consumo de psicofármacos constituye un fenómeno de creciente relevancia dentro de los sistemas de salud contemporáneos. La expansión de los diagnósticos relacionados con la salud mental, junto con una mayor disponibilidad de tratamientos farmacológicos, ha contribuido al incremento de la utilización de medicamentos destinados al tratamiento de trastornos psicológicos y psiquiátricos.
 
@@ -31,8 +40,10 @@ En este contexto, el presente trabajo se propone responder la siguiente pregunta
 La hipótesis que orienta el proyecto sostiene que el consumo de psicofármacos no se distribuye de manera uniforme dentro de la población y que, mediante la aplicación de técnicas de clustering, es posible identificar grupos de individuos con patrones de consumo diferenciados.
 
 Además de su relevancia temática, este trabajo posee un importante valor metodológico. La construcción de un dataset integrado, la generación de variables derivadas, la realización de análisis exploratorios y la implementación de modelos de Aprendizaje Automático constituyen etapas fundamentales dentro de cualquier proyecto de Ciencia de Datos. Por este motivo, el proyecto permite aplicar de manera práctica los contenidos desarrollados durante la asignatura y ejemplificar el potencial de estas herramientas para abordar problemáticas reales vinculadas al campo de la salud.
+
+
 -----
-3. Objetivos
+# 3. Objetivos
 Objetivo General
 
 Identificar patrones de consumo de psicofármacos en población adulta mediante la aplicación de técnicas de Aprendizaje Automático no supervisado sobre un dataset integrado construido a partir de información sanitaria, demográfica y farmacológica.
@@ -47,7 +58,9 @@ Implementar algoritmos de clustering utilizando K-Means.
 Identificar perfiles diferenciados de consumo de psicofármacos.
 Interpretar los resultados obtenidos y evaluar su utilidad para comprender el fenómeno estudiado.
 
-4. Origen de los Datos
+-------
+
+# 4. Origen de los Datos
 
 La calidad y pertinencia de los datos constituyen uno de los factores más importantes en cualquier proyecto de Aprendizaje Automático. En este trabajo se utilizaron datos provenientes de la Medical Expenditure Panel Survey (MEPS), una encuesta nacional desarrollada por la Agency for Healthcare Research and Quality (AHRQ) de los Estados Unidos. Esta encuesta es considerada una de las fuentes públicas más completas para el estudio de los gastos médicos, la utilización de servicios de salud, las condiciones clínicas y el consumo de medicamentos dentro de la población civil no institucionalizada.
 
@@ -57,7 +70,7 @@ La elección de esta fuente se fundamenta en la amplitud y riqueza de la informa
 
 Para la construcción del dataset final se utilizaron tres conjuntos de datos correspondientes al año 2020.
 
-4.1 H224 – Full Year Consolidated Data File
+## 4.1 H224 – Full Year Consolidated Data File
 
 El archivo H224 constituye el conjunto principal de la encuesta MEPS. Contiene información consolidada de los participantes e incluye variables relacionadas con características demográficas, económicas, educativas y sanitarias.
 
@@ -76,7 +89,7 @@ RACETHX (grupo racial o étnico)
 
 Estas variables permiten caracterizar el contexto social y sanitario de los individuos, proporcionando información fundamental para interpretar los patrones de consumo observados posteriormente.
 
-4.2 H222 – Medical Conditions File
+## 4.2 H222 – Medical Conditions File
 
 El archivo H222 contiene información sobre las condiciones médicas registradas para cada participante de la encuesta.
 
@@ -90,7 +103,7 @@ cantidad_condiciones
 
 Esta variable constituye un indicador aproximado del nivel de complejidad clínica de cada participante y permite evaluar la relación existente entre el estado de salud general y el consumo de psicofármacos.
 
-4.3 H229A – Prescribed Medicines File
+## 4.3 H229A – Prescribed Medicines File
 
 El archivo H229A contiene información relacionada con medicamentos prescritos utilizados por los participantes de la encuesta.
 
@@ -114,7 +127,7 @@ obtenida mediante la suma de las distintas categorías farmacológicas considera
 
 Esta variable resume el nivel general de consumo de psicofármacos y constituye uno de los principales indicadores utilizados durante el proceso de segmentación.
 
-4.4 Justificación de la Selección de los Datos
+## 4.4 Justificación de la Selección de los Datos
 
 La combinación de los archivos H224, H222 y H229A permitió integrar dimensiones complementarias del fenómeno estudiado.
 
@@ -122,11 +135,13 @@ Mientras que el archivo H224 aporta información demográfica y socioeconómica,
 
 La integración de estas tres fuentes permitió construir un dataset especialmente diseñado para responder la pregunta de investigación planteada, generando una base de datos capaz de representar múltiples aspectos asociados al consumo de psicofármacos.
 
-5. Construcción del Dataset Final
+-------
+
+# 5. Construcción del Dataset Final
 
 Una de las etapas más importantes del proyecto consistió en la construcción de un dataset integrado a partir de múltiples fuentes de información. Aunque los archivos utilizados pertenecen a la misma encuesta, cada uno presenta estructuras y niveles de granularidad diferentes. Por este motivo fue necesario desarrollar un proceso de preparación y unificación que permitiera generar una única base de datos apta para el análisis y modelado.
 
-5.1 Selección de Variables
+## 5.1 Selección de Variables
 
 La primera etapa consistió en identificar aquellas variables que resultaban relevantes para el problema de investigación.
 
@@ -159,7 +174,7 @@ Total de psicofármacos
 
 Esta selección permitió construir una representación multidimensional de la población estudiada.
 
-5.2 Construcción de Variables Derivadas
+## 5.2 Construcción de Variables Derivadas
 
 No todas las variables utilizadas en el análisis se encontraban disponibles de manera directa en los archivos originales.
 
@@ -194,7 +209,7 @@ total_psicofarmacos
 
 mediante la suma de todos los grupos farmacológicos considerados.
 
-5.3 Integración de los Conjuntos de Datos
+## 5.3 Integración de los Conjuntos de Datos
 
 La integración de los tres archivos se realizó utilizando la variable:
 
@@ -206,7 +221,7 @@ Se aplicaron operaciones de unión (merge) utilizando DUPERSID como clave primar
 
 Como resultado se obtuvo un dataset integrado que reúne información demográfica, socioeconómica, clínica y farmacológica.
 
-5.4 Limpieza y Preparación de los Datos
+## 5.4 Limpieza y Preparación de los Datos
 
 Una vez realizada la integración, se llevaron a cabo diversas tareas de limpieza y preparación de datos:
 
@@ -219,12 +234,15 @@ Control de integridad de los registros.
 
 Estas tareas permitieron mejorar la calidad de la información y garantizar la confiabilidad de los resultados obtenidos posteriormente.
 
-5.5 Dataset Final
+## 5.5 Dataset Final
 
 Como resultado del proceso de integración y preparación se obtuvo un dataset consolidado compuesto por aproximadamente 27.805 individuos y 18 variables, donde cada fila representa una persona identificada mediante la variable DUPERSID.
 
 Este conjunto de datos constituye la base sobre la cual se desarrollaron las etapas posteriores de análisis exploratorio, reducción de dimensionalidad y modelado mediante técnicas de Aprendizaje Automático
-# 6. Descripción Completa del Dataset
+
+-----
+
+##  6. Descripción Completa del Dataset
 
 ## 6.1 Características Generales
 
@@ -248,7 +266,6 @@ Como resultado del proceso de selección, transformación y unificación de dato
 
 Cada fila representa una persona identificada mediante la variable DUPERSID.
 
----
 
 ## 6.2 Diccionario de Variables
 
@@ -273,7 +290,7 @@ Cada fila representa una persona identificada mediante la variable DUPERSID.
 | ansioliticos | Cantidad de ansiolíticos consumidos | Int64 | Cuantitativa Discreta |
 | total_psicofarmacos | Cantidad total de psicofármacos consumidos | Int64 | Cuantitativa Discreta |
 
----
+
 
 ## 6.3 Clasificación de las Variables
 
@@ -321,7 +338,7 @@ Con el objetivo de comprender la naturaleza de los datos utilizados en el análi
 | ansioliticos | Consumo de ansiolíticos |
 | total_psicofarmacos | Total de psicofármacos consumidos |
 
----
+
 
 ## 6.4 Relevancia del Dataset para el Problema de Investigación
 
@@ -340,9 +357,9 @@ El Análisis Exploratorio de Datos (EDA, por sus siglas en inglés) constituye u
 
 En este proyecto, el análisis exploratorio permitió caracterizar la población estudiada, comprender la distribución de las variables seleccionadas y evaluar la existencia de relaciones relevantes entre los distintos indicadores asociados al consumo de psicofármacos.
 
----
 
-## 7.1 Distribución de la Edad
+
+## 7.1 Distribución de la Edad ( recordar insertar mis graficos antes de la entrega del documento, si no puedo preguntarle al profe con tiempo) 
 
 La edad constituye una de las variables demográficas más importantes dentro del análisis debido a que numerosos estudios han demostrado que la utilización de medicamentos psicotrópicos suele variar significativamente entre distintos grupos etarios.
 
@@ -350,11 +367,11 @@ La distribución observada evidencia una amplia representación de individuos ad
 
 **Figura 1. Distribución de edades de la población estudiada.**
 
-*(Insertar gráfico de histograma de AGE20X)*
+*(Insertar gráfico de histograma de AGE20X, no me tengo que olvidar )*
 
 La presencia de individuos pertenecientes a múltiples grupos etarios aporta diversidad al conjunto de datos y favorece la identificación de perfiles diferenciados durante el proceso de segmentación.
 
----
+
 
 ## 7.2 Complejidad Clínica de la Población
 
@@ -364,13 +381,13 @@ Esta variable resulta particularmente relevante debido a que permite aproximar e
 
 **Figura 2. Distribución de la cantidad de condiciones médicas.**
 
-*(Insertar boxplot o histograma de cantidad_condiciones)*
+*(Insertar boxplot o histograma de cantidad_condiciones, no me tengo que olvidar !!!!!)*
 
 Los resultados muestran una importante variabilidad entre individuos. Mientras algunos participantes presentan pocas condiciones médicas registradas, otros acumulan múltiples diagnósticos.
 
 Esta heterogeneidad sugiere la existencia de diferentes niveles de necesidad sanitaria dentro de la población estudiada.
 
----
+
 
 ## 7.3 Consumo de Psicofármacos
 
@@ -385,13 +402,13 @@ Para ello se construyeron variables específicas asociadas al consumo de:
 
 **Figura 3. Distribución del consumo por categoría farmacológica.**
 
-*(Insertar gráfico de barras de psicofármacos)*
+*(Insertar gráfico de barras de psicofármacos, no me tengo que olvidar !!!)*
 
 Los resultados muestran diferencias significativas entre las distintas categorías de medicamentos.
 
 Estas diferencias evidencian que determinados grupos farmacológicos poseen una mayor presencia dentro de la población estudiada, reflejando posibles tendencias terapéuticas asociadas al tratamiento de problemas vinculados a la salud mental.
 
----
+
 
 ## 7.4 Relación entre Variables
 
@@ -399,7 +416,7 @@ Con el objetivo de identificar posibles asociaciones entre las variables numéri
 
 **Figura 4. Matriz de correlación de variables numéricas.**
 
-*(Insertar Heatmap de correlaciones)*
+*(Insertar Heatmap de correlaciones, no me tengo que olvidar !!!!, si no puedo preguntarle al profe con tiempo)*
 
 El análisis de correlación permitió observar asociaciones positivas entre:
 
@@ -411,7 +428,7 @@ Estos resultados sugieren que los individuos con mayor complejidad clínica tien
 
 Asimismo, se observa una relación esperable entre la cantidad total de psicofármacos y las distintas categorías farmacológicas consideradas.
 
----
+
 
 ## 7.5 Principales Hallazgos del Análisis Exploratorio
 
@@ -433,7 +450,7 @@ Antes de aplicar los algoritmos de Aprendizaje Automático fue necesario realiza
 
 Esta fase tiene como objetivo garantizar que las variables utilizadas presenten condiciones adecuadas para el entrenamiento de los modelos y evitar que diferencias de escala afecten los resultados obtenidos.
 
----
+
 
 ## 8.1 Selección de Variables
 
@@ -450,7 +467,7 @@ Para el modelado se seleccionaron las variables con mayor relevancia para el an�
 
 Estas variables representan aspectos demográficos, clínicos y farmacológicos considerados centrales para la construcción de perfiles de consumo.
 
----
+
 
 ## 8.2 Estandarización de Variables
 
@@ -464,7 +481,7 @@ Este procedimiento transforma las variables de manera que todas posean media cer
 
 La estandarización constituye una práctica habitual en algoritmos basados en distancias, como K-Means.
 
----
+
 
 ## 8.3 Reducción de Dimensionalidad mediante PCA
 
@@ -493,7 +510,7 @@ A diferencia de los problemas de clasificación, no existen etiquetas previas qu
 
 Por este motivo se emplearon algoritmos capaces de descubrir patrones y estructuras presentes en los datos sin necesidad de contar con categorías previamente definidas.
 
----
+
 
 ## 9.2 Principal Component Analysis (PCA)
 
@@ -503,7 +520,7 @@ Esta metodología permitió reducir la dimensionalidad del conjunto de datos con
 
 La representación obtenida mediante los componentes principales facilitó posteriormente la visualización de los grupos identificados por el algoritmo de clustering.
 
----
+
 
 ## 9.3 K-Means Clustering
 
@@ -518,7 +535,7 @@ La elección de este algoritmo se fundamenta en:
 - Su amplia utilización en problemas de segmentación.
 - Su facilidad de interpretación.
 
----
+
 
 ## 9.4 Determinación del Número de Clusters
 
@@ -539,21 +556,21 @@ La aplicación conjunta de PCA y K-Means permitió identificar grupos diferencia
 
 La segmentación obtenida evidencia que el consumo de psicofármacos no constituye un fenómeno homogéneo, sino que presenta patrones diferenciados dentro de la población estudiada.
 
----
 
-## 10.1 Visualización de los Clusters
+
+## 10.1 Visualización de los Clusters( no olvidar insertar los graficos y si no puedo le pido ayuda al profe)
 
 La representación gráfica de los datos utilizando los dos primeros componentes principales permitió observar la distribución espacial de los individuos y la conformación de los distintos clusters.
 
 **Figura 6. Representación de clusters mediante PCA.**
 
-*(Insertar gráfico PCA + K-Means)*
+*(Insertar gráfico PCA + K-Means, no olvidar !!!!)*
 
 La visualización muestra que los grupos identificados presentan cierto grado de separación, indicando que existen diferencias reales entre los perfiles detectados por el algoritmo.
 
 Aunque algunos sectores presentan superposición parcial, los resultados sugieren la existencia de estructuras subyacentes dentro de los datos que justifican la utilización de técnicas de segmentación.
 
----
+
 
 ## 10.2 Caracterización General de los Clusters
 
@@ -595,7 +612,7 @@ Sus principales características incluyen:
 
 Este perfil sugiere una mayor interacción con el sistema sanitario y una utilización más intensiva de tratamientos farmacológicos.
 
----
+
 
 ## 10.3 Interpretación de los Resultados
 
@@ -627,7 +644,7 @@ Durante el proceso de selección del número óptimo de clusters se analizó la 
 
 Los resultados mostraron una disminución progresiva de la inercia a medida que aumentaba el número de clusters, permitiendo identificar un punto de equilibrio entre complejidad y capacidad explicativa.
 
----
+
 
 ## 11.2 Silhouette Score
 
@@ -642,7 +659,7 @@ Valores cercanos a 1 indican grupos bien definidos, mientras que valores próxim
 
 El valor obtenido indica que la segmentación generada por el modelo resulta razonablemente consistente y permite diferenciar perfiles con características particulares.
 
----
+
 
 ## 11.3 Evaluación General
 
