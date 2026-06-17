@@ -671,32 +671,46 @@ Si bien ningún algoritmo de clustering produce una segmentación perfecta, los 
 
 # 12. Discusión
 Los resultados obtenidos en este proyecto permiten reflexionar sobre la complejidad del consumo de psicofármacos y sobre las ventajas que ofrecen las técnicas de Aprendizaje Automático no supervisado para analizar grandes volúmenes de datos sanitarios.
+
 Uno de los hallazgos más relevantes fue la identificación de tres perfiles diferenciados de consumo mediante el algoritmo K-Means. Esta segmentación demuestra que la utilización de psicofármacos no sigue un patrón homogéneo en la población adulta, sino que responde a combinaciones específicas de factores demográficos y clínicos. Algunos clusters mostraron mayor consumo asociado a edades avanzadas y alta carga de condiciones médicas, mientras que otros presentaron consumos más bajos, lo que resalta la heterogeneidad del fenómeno.
+
 El análisis exploratorio de datos reveló correlaciones importantes entre variables como cantidad_condiciones, recetas_totales y total_psicofarmacos. Estas relaciones sugieren que la multimorbilidad actúa como un fuerte predictor del consumo de psicofármacos. Además, la inclusión de variables demográficas (AGE20X, SEX, POVCAT20, EDUCYR, RACETHX) y socioeconómicas permitió enriquecer el análisis, mostrando que factores como la edad, el nivel educativo y la situación de pobreza también influyen en los patrones observados.
+
 Metodológicamente, la aplicación combinada de Análisis de Componentes Principales (PCA) y K-Means resultó altamente efectiva. El PCA permitió reducir la dimensionalidad de los datos de forma significativa, reteniendo la mayor parte de la varianza original en solo dos componentes principales. Esto facilitó la visualización de la estructura subyacente de los datos y preparó el conjunto para la etapa de clustering. Posteriormente, K-Means logró agrupar a los 27.805 individuos en tres clusters homogéneos, revelando patrones que difícilmente habrían sido detectados mediante análisis estadísticos tradicionales.
+
 La integración de información proveniente de los archivos H224 (Consolidated Data File), H222 (Medical Conditions File) y H229A (Prescribed Medicines File) de la encuesta MEPS constituyó un paso fundamental. Esta integración permitió construir un dataset robusto que combinó variables demográficas, clínicas y farmacológicas, lo que representa uno de los principales aportes técnicos del proyecto.
 
 -----
 
 # 13. Conclusiones
 El presente proyecto tuvo como objetivo principal identificar patrones de consumo de psicofármacos en población adulta mediante técnicas de Aprendizaje Automático no supervisado.
+
 Para alcanzar este objetivo se construyó un dataset integrado con 27.805 registros y 18 variables, combinando información demográfica (AGE20X, SEX, POVCAT20, EDUCYR, RACETHX), clínica (cantidad_condiciones) y farmacológica (recetas_totales, benzodiacepinas, antidepresivos, hipnoticos, ansioliticos y total_psicofarmacos), proveniente de los archivos H224, H222 y H229A de la encuesta MEPS.
+
 El análisis exploratorio permitió observar una importante heterogeneidad en la población estudiada y establecer relaciones relevantes entre las variables. Mediante la técnica de Análisis de Componentes Principales (PCA) se redujo exitosamente la dimensionalidad del conjunto de datos, preservando una proporción significativa de la varianza original en dos componentes principales. Esta reducción facilitó la visualización de los datos y preparó el terreno para la aplicación del algoritmo de clustering.
+
 Posteriormente, la implementación de K-Means con 3 clusters permitió segmentar a los individuos en grupos homogéneos según su perfil de edad, carga de morbilidad y consumo de psicofármacos. Los clusters obtenidos mostraron perfiles claramente diferenciados, confirmando que el consumo de estos medicamentos responde a patrones específicos y no aleatorios.
+
 Los resultados respaldan plenamente la hipótesis inicial del proyecto y demuestran el potencial de las técnicas de Aprendizaje Automático no supervisado (especialmente la combinación de PCA y K-Means) para descubrir estructuras ocultas en datos de salud. Este trabajo no solo aporta conocimiento sobre el consumo de psicofármacos, sino que también evidencia cómo estas técnicas pueden convertirse en herramientas útiles para apoyar la toma de decisiones en salud pública.
+
 Desde el punto de vista formativo, el proyecto permitió aplicar de manera práctica y completa las etapas clave del Aprendizaje Automático: preprocesamiento de datos, reducción de dimensionalidad, modelado no supervisado, evaluación de resultados e interpretación de los clusters.
 
 ---------
 
 # 14. Limitaciones y Trabajos Futuros
 Aunque los resultados son prometedores, es importante reconocer las limitaciones del estudio. En primer lugar, los datos utilizados provienen de la encuesta MEPS, por lo que los hallazgos están condicionados por las variables disponibles y por posibles sesgos inherentes a las encuestas de autoinforme. En segundo lugar, la clasificación de los psicofármacos en las distintas categorías farmacológicas implicó decisiones metodológicas subjetivas que podrían perfeccionarse.
-Además, el algoritmo K-Means, si bien adecuado para una primera aproximación, presenta limitaciones conocidas (como la necesidad de definir previamente el número de clusters y su sensibilidad a la inicialización).
-Trabajos futuros recomendados:
 
-Explorar otros algoritmos de clustering no supervisado, tales como DBSCAN, Agglomerative Clustering, Gaussian Mixture Models y Spectral Clustering, para comparar su desempeño con K-Means.
-Incorporar nuevas variables relevantes, como diagnósticos específicos de trastornos mentales, duración de los tratamientos farmacológicos, utilización de psicoterapia o calidad de vida percibida.
-Desarrollar modelos de Aprendizaje Automático supervisado (Regresión Logística, Random Forest, Gradient Boosting, Redes Neuronales) para predecir la probabilidad de alto consumo de psicofármacos.
-Realizar análisis longitudinales utilizando diferentes paneles de la encuesta MEPS, con el fin de estudiar la evolución temporal de los patrones de consumo.
+Además, el algoritmo K-Means, si bien adecuado para una primera aproximación, presenta limitaciones conocidas (como la necesidad de definir previamente el número de clusters y su sensibilidad a la inicialización).
+
+## Trabajos futuros recomendados:
+
+* Explorar otros algoritmos de clustering no supervisado, tales como DBSCAN, Agglomerative Clustering, Gaussian Mixture Models y Spectral Clustering, para comparar su desempeño con K-Means.
+
+* Incorporar nuevas variables relevantes, como diagnósticos específicos de trastornos mentales, duración de los tratamientos farmacológicos, utilización de psicoterapia o calidad de vida percibida.
+
+* Desarrollar modelos de Aprendizaje Automático supervisado (Regresión Logística, Random Forest, Gradient Boosting, Redes Neuronales) para predecir la probabilidad de alto consumo de psicofármacos.
+
+* Realizar análisis longitudinales utilizando diferentes paneles de la encuesta MEPS, con el fin de estudiar la evolución temporal de los patrones de consumo.
 Evaluar la posibilidad de integrar datos de otras fuentes (registros administrativos o encuestas de salud mental) para enriquecer el modelo.
 
 -------
