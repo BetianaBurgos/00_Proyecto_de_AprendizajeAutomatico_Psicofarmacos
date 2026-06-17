@@ -717,6 +717,8 @@ Evaluar la posibilidad de integrar datos de otras fuentes (registros administrat
 
 # 15. Bibliografía
 
+- Revision de clases grabadas, "Aprendizaje Automatico, año 2026" ( Campus Politecnico Malvinas)
+- Material Bibliografico (Libro 1 y Libro 2, Aprendizaje Automatico , alo 2026, Campus Politecnico Malvinas)
 - Agency for Healthcare Research and Quality (AHRQ). Medical Expenditure Panel Survey (MEPS).
 - Hastie, T., Tibshirani, R. y Friedman, J. (2009). The Elements of Statistical Learning.
 - Géron, A. (2022). Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow.
@@ -725,3 +727,8 @@ Evaluar la posibilidad de integrar datos de otras fuentes (registros administrat
 - Documentación oficial de Pandas.
 - Documentación oficial de NumPy.
 - Documentación oficial de Scikit-Learn.
+- Grok (IA, para resolver conflictos con los codigos)
+- DaVinci( creacion de imagenes)
+- Canva ( video)
+- ChatGPT( mejorar diseño de imagenes)
+- 
