@@ -359,7 +359,7 @@ En este proyecto, el análisis exploratorio permitió caracterizar la población
 
 
 
-## 7.1 Distribución de la Edad ( recordar insertar mis graficos antes de la entrega del documento, si no puedo preguntarle al profe con tiempo) 
+## 7.1 Distribución de la Edad  
 
 La edad constituye una de las variables demográficas más importantes dentro del análisis debido a que numerosos estudios han demostrado que la utilización de medicamentos psicotrópicos suele variar significativamente entre distintos grupos etarios.
 
