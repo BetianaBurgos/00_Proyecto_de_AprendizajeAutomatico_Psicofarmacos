@@ -365,7 +365,7 @@ La edad constituye una de las variables demográficas más importantes dentro de
 
 La distribución observada evidencia una amplia representación de individuos adultos pertenecientes a diferentes rangos de edad, permitiendo analizar patrones de consumo en una población heterogénea.
 
-![Figura 1](figures/FIGURA1_EDADES.PNG)
+![Figura 1](FIGURES/FIGURA1_EDADES.PNG)
 
 **Figura 1. Distribución de edades de la población estudiada.**
 
