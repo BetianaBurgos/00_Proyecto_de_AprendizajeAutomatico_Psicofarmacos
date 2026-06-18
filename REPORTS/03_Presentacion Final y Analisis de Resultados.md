@@ -4,6 +4,82 @@
 
 ## Alumna: Betiana Ruth Burgos
 ----------
+# Índice
+
+## 1. Introducción
+
+## 2. Fundamentación del Problema
+
+## 3. Objetivos
+
+##   * 3.1 Objetivo General
+##   * 3.2 Objetivos Específicos
+
+## 4. Origen de los Datos
+
+##   * 4.1 H224 – Full Year Consolidated Data File
+##   * 4.2 H222 – Medical Conditions File
+##   * 4.3 H229A – Prescribed Medicines File
+##   * 4.4 Justificación de la Selección de los Datos
+
+## 5. Construcción del Dataset Final
+
+##   * 5.1 Selección de Variables
+##   * 5.2 Construcción de Variables Derivadas
+##   * 5.3 Integración de los Conjuntos de Datos
+##   * 5.4 Limpieza y Preparación de los Datos
+##  * 5.5 Dataset Final
+
+## 6. Descripción Completa del Dataset
+
+##   * 6.1 Características Generales
+##   * 6.2 Diccionario de Variables
+##   * 6.3 Clasificación de las Variables
+##   * 6.4 Relevancia del Dataset para el Problema de Investigación
+
+## 7. Análisis Exploratorio de Datos
+
+##   * 7.1 Distribución de la Edad
+##   * 7.2 Complejidad Clínica de la Población
+##   * 7.3 Consumo de Psicofármacos
+##   * 7.4 Relación entre Variables
+##   * 7.5 Principales Hallazgos del Análisis Exploratorio
+
+## 8. Preparación de los Datos para el Modelado
+
+##   * 8.1 Selección de Variables
+##   * 8.2 Estandarización de Variables
+##   * 8.3 Reducción de Dimensionalidad mediante PCA
+
+## 9. Modelo de Aprendizaje Automático
+
+##   * 9.1 Tipo de Aprendizaje
+##   * 9.2 Principal Component Analysis (PCA)
+##   * 9.3 K-Means Clustering
+##   * 9.4 Determinación del Número de Clusters
+
+## 10. Resultados del Modelo
+
+##    * 10.1 Visualización de los Clusters
+##    * 10.2 Caracterización General de los Clusters
+##    * 10.3 Interpretación de los Resultados
+
+## 11. Evaluación del Modelo
+
+##    * 11.1 Inercia
+##    * 11.2 Silhouette Score
+##    * 11.3 Evaluación General
+
+## 12. Discusión
+
+## 13. Conclusiones
+
+## 14. Limitaciones y Trabajos Futuros
+
+## 15. Bibliografía
+
+
+------------
 
 # 1. Introducción
 
