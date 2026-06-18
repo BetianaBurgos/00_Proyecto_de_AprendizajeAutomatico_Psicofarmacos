@@ -383,7 +383,7 @@ Esta variable resulta particularmente relevante debido a que permite aproximar e
 
 **Figura 2. Distribución de la cantidad de condiciones médicas.**
 
-![Figura 2](FIGURES/FIGURA2_CONDICIONES.PNG)
+![Figura 1](FIGURES/FIGURA2_CONDICIONES.PNG)
 
 **Figura 2. Distribución de la cantidad de condiciones médicas.**
 
