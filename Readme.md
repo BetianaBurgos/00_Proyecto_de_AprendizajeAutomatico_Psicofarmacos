@@ -130,28 +130,25 @@ El repositorio se encuentra organizado siguiendo los principios de la plantilla 
 ```text
 ├── README.md
 
-├── data
-│   ├── raw
+├── DATA
+│   ├── RAW
 │   │   ├── h224.csv
 │   │   ├── h222.csv
 │   │   └── h229a.csv
 │   │
-│   ├── interim
 │   │
-│   ├── processed
+│   ├── PROCESSED
 │   │   └── dataset_psicofarmacos_final.csv
-│   │
-│   └── external
-
-├── notebooks
+|   |
+├── Notebooks
 │   ├── 01_unificacion_datos.ipynb
 │   └── 02_modelo_clustering.ipynb
 
-├── docs
-│
-├── references
-│   └── diccionario_variables.pdf
-
+├── DOCS
+|   ├── 01_Objetivos_y_Alcance del Proyecto.md
+|   |
+│   └── 02_Analisis_exploratorio.md
+|
 ├── reports
 │   ├── figures
 │   │   ├── figura1_edades.png
@@ -163,7 +160,7 @@ El repositorio se encuentra organizado siguiendo los principios de la plantilla 
 │   │   ├── figura7_cantidad_clusters.png
 │   │   └── figura8_promedio_cluster.png
 │   │
-│   └── entrega_final.md
+│   └── 03_ Presentacion Final y Analisis de Resultados
 
 ├── models
 │
