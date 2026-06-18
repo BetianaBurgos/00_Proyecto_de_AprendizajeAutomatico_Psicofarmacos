@@ -367,8 +367,7 @@ La distribución observada evidencia una amplia representación de individuos ad
 
 ![Figura 1](figures/FIGURA%201.Distribucion%20de%20Edad%20de%20la%20Población%20Estudiada.png)
 
-
-**FIGURA 1.Distribucion de Edad de la Población Estudiada**
+**Figura 1. Distribución de edades de la población estudiada.**
 
 
 
