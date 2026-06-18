@@ -149,16 +149,16 @@ El repositorio se encuentra organizado siguiendo los principios de la plantilla 
 |   |
 │   └── 02_Analisis_exploratorio.md
 |
-├── reports
-│   ├── figures
-│   │   ├── figura1_edades.png
-│   │   ├── figura2_condiciones.png
-│   │   ├── figura3_psicofarmacos.png
-│   │   ├── figura4_correlaciones.png
-│   │   ├── figura5_codo.png
-│   │   ├── figura6_clusters.png
-│   │   ├── figura7_cantidad_clusters.png
-│   │   └── figura8_promedio_cluster.png
+├── RPORTS
+│   ├── FIGURES
+│   │   ├── FIGURA 1.Distribucion de Edad de la Población Estudiada.png
+│   │   ├── FIGURA 2_Distribución de Cantidad de Condiciones Médicas.png
+│   │   ├── FIGURA 3_Consumo Total por Categoía Farmacológica.png
+│   │   ├── FIGURA 4_Matriz de Correlación.png
+│   │   ├── FIGURA 5_Método del Codo.png
+│   │   ├── FIGURA 6_Visualización de Clusters en el Espacio PCA.png
+│   │   ├── FIGURA 7_Cantidad de Individuos por Cluster.png
+│   │   └── FIGURA 8_Promedio de Psicofármacos.png
 │   │
 │   └── 03_ Presentacion Final y Analisis de Resultados
 
