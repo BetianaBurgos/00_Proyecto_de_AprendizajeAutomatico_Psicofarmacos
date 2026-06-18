@@ -383,7 +383,10 @@ Esta variable resulta particularmente relevante debido a que permite aproximar e
 
 **Figura 2. Distribución de la cantidad de condiciones médicas.**
 
-*(Insertar boxplot o histograma de cantidad_condiciones, no me tengo que olvidar !!!!!)*
+![Figura 2](FIGURES/FIGURA2_CONDICIONES.PNG)
+
+**Figura 2. Distribución de la cantidad de condiciones médicas.**
+
 
 Los resultados muestran una importante variabilidad entre individuos. Mientras algunos participantes presentan pocas condiciones médicas registradas, otros acumulan múltiples diagnósticos.
 
