@@ -383,7 +383,7 @@ Esta variable resulta particularmente relevante debido a que permite aproximar e
 
 **Figura 2. Distribución de la cantidad de condiciones médicas.**
 
-![Figura 2](FIGURES/FIGURA2_CONDICIONES.PNG)
+![Figura 2](FIGURES/FIGURA 2_CONDICIONES.PNG)
 
 
 Los resultados muestran una importante variabilidad entre individuos. Mientras algunos participantes presentan pocas condiciones médicas registradas, otros acumulan múltiples diagnósticos.
