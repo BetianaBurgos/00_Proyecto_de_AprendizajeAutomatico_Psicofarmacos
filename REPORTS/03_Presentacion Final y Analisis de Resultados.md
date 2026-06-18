@@ -405,7 +405,7 @@ Para ello se construyeron variables específicas asociadas al consumo de:
 
 **Figura 3. Distribución del consumo por categoría farmacológica.**
 
-*(Insertar gráfico de barras de psicofármacos, no me tengo que olvidar !!!)*
+![Figura 3](FIGURES/FIGURA3_CONSUMO.PNG)
 
 Los resultados muestran diferencias significativas entre las distintas categorías de medicamentos.
 
@@ -419,7 +419,7 @@ Con el objetivo de identificar posibles asociaciones entre las variables numéri
 
 **Figura 4. Matriz de correlación de variables numéricas.**
 
-*(Insertar Heatmap de correlaciones, no me tengo que olvidar !!!!, si no puedo preguntarle al profe con tiempo)*
+![Figura 4](FIGURES/FIGURA4_CORRELACION.PNG)
 
 El análisis de correlación permitió observar asociaciones positivas entre:
 
@@ -546,7 +546,7 @@ Para determinar la cantidad óptima de grupos se aplicó el Método del Codo.
 
 **Figura 5. Método del Codo para selección de K.**
 
-*(Insertar gráfico del método del codo)*
+![Figura ](FIGURES/FIGURA5_CODO.PNG)
 
 El análisis permitió identificar un punto de inflexión a partir del cual la reducción de la inercia comienza a estabilizarse.
 
@@ -561,13 +561,13 @@ La segmentación obtenida evidencia que el consumo de psicofármacos no constitu
 
 
 
-## 10.1 Visualización de los Clusters( no olvidar insertar los graficos y si no puedo le pido ayuda al profe)
+## 10.1 Visualización de los Clusters
 
 La representación gráfica de los datos utilizando los dos primeros componentes principales permitió observar la distribución espacial de los individuos y la conformación de los distintos clusters.
 
 **Figura 6. Representación de clusters mediante PCA.**
 
-*(Insertar gráfico PCA + K-Means, no olvidar !!!!)*
+![Figura 6](FIGURES/FIGURA6_VCLUSTERS.PNG)
 
 La visualización muestra que los grupos identificados presentan cierto grado de separación, indicando que existen diferencias reales entre los perfiles detectados por el algoritmo.
 
@@ -734,4 +734,4 @@ Evaluar la posibilidad de integrar datos de otras fuentes (registros administrat
 - DaVinci( creacion de imagenes)
 - Canva ( video)
 - ChatGPT( mejorar diseño de imagenes)
-- 
+
